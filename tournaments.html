@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="турніри, рейтинг, кіберспорт, CS2, CoolGuys">
+    <meta name="description" content="Платформа для турнірів з інформацією про гравців, команди та статистику">
+    <meta name="author" content="CoolGuys">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турніри - Турнірний портал</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo">
+        <nav>
+            <a href="index.html">Головна</a>
+            <div class="dropdown">
+                <a href="tournaments.html">Турніри</a>
+                <div class="dropdown-content">
+                    <a href="tournaments.html#upcoming">Майбутні турніри</a>
+                    <a href="tournaments.html#past">Минулі турніри</a>
+                    <a href="tournaments.html#registration">Реєстрація</a>
+                </div>
+            </div>
+            <a href="rating.html">Рейтинги</a>
+        </nav>
+        <a href="/profile">Особистий кабінет</a>
+    </header>
+
+    <main>
+        <div id="hero">
+            <h1>Турніри та змагання</h1>
+        </div>
+        
+        <section id="upcoming">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Майбутні турніри</h2>
+            <div class="card-container">
+                <article class="info-card tournament">
+                    <div style="width: 50%;">
+                        <h2>5COOL APRIL</h2>
+                        <p>— Дата проведення:
+                            • Кваліфікація для всіх о 15:00 12.04
+                            • Починається Основна стадія о 17:00 12.04
+                            Реєстрація до 12.04 14:00
+                        </p>
+                        <p></p>
+                        <p>— Призовий фонд - 1400 грн</p>
+                        <p></p>
+                        <p>🥇 Перше місце забирає 1200 грн на команду</p>
+                        <p>🥈 Друге місце забирає 200 грн на команду</p>
+                    
+                        <p>Формат та уточнення:
+                        • Можна брати участь соло, вам буде підібрано тімейта 
+                            • Участь безкоштовна
+                                • Платформа Faceit з Античитом
+                                • Сітка Double Elimination, Фінал BO3 (Основна стадія)
+                                • Сітка Single Elimination, Матчі BO1 (Кваліфікація)
+                        </p>
+                            
+                    </div>
+                    <img src="img/5COOL_APRIL.jpg" alt="5COOL APRIL турнір">
+                </article>
+                
+                <article class="info-card tournament">
+                    <div style="width: 50%;">
+                        <h2>SUMMER CHAMPIONSHIP</h2>
+                        <p>— Дата проведення:
+                            • Кваліфікація стартує 20.05 о 16:00
+                            • Фінали відбудуться 22.05 о 18:00
+                            Реєстрація до 19.05 18:00
+                        </p>
+                        <p></p>
+                        <p>— Призовий фонд - 5000 грн + спонсорські призи</p>
+                        <p></p>
+                        <p>🥇 Перше місце - 3000 грн + геймерське обладнання</p>
+                        <p>🥈 Друге місце - 1500 грн</p>
+                        <p>🥉 Третє місце - 500 грн</p>
+                    
+                        <p>Формат та уточнення:
+                        • Командний формат 5х5
+                        • Обов'язкова реєстрація повним складом
+                        • Турнір проходитиме на новій картi
+                        • Обов'язкова наявність мікрофона
+                        </p>
+                            
+                    </div>
+                    <img src="img/summer_championship.jpg" alt="Summer Championship турнір">
+                </article>
+            </div>
+        </section>
+        
+        <section id="past">
+            <h2 style="text-align: center; margin: 3rem 0 2rem;">Минулі турніри</h2>
+            <div class="card-container">
+                <article class="info-card tournament">
+                    <div style="width: 50%;">
+                        <h2>WINTER CUP 2024</h2>
+                        <p>— Дата проведення: 15.02.2024 - 17.02.2024</p>
+                        <p>— Призовий фонд: 10000 грн</p>
+                        <p></p>
+                        <p>Переможці:</p>
+                        <p>🥇 Team Alpha - 6000 грн</p>
+                        <p>🥈 Dominators - 3000 грн</p>
+                        <p>🥉 Victorious - 1000 грн</p>
+                        <p></p>
+                        <p>Кількість учасників: 32 команди</p>
+                        <a href="#" style="color: #aaa; text-decoration: underline;">Детальніше про турнір</a>
+                    </div>
+                    <img src="img/winter_cup.jpg" alt="Winter Cup 2024">
+                </article>
+            </div>
+        </section>
+        <h2 style="text-align: center; margin: 3rem 0 2rem;">Реєстрація на турнір</h2>
+        <section id="registration">
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="team-name">Назва команди*</label>
+                    <input type="text" id="team-name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="captain-email">Email капітана*</label>
+                    <input type="email" id="captain-email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="captain-phone">Телефон капітана*</label>
+                    <input type="tel" id="captain-phone" class="form-control" pattern="[0-9]{10}" placeholder="0991234567" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tournament-date">Оберіть турнір*</label>
+                    <select id="tournament-date" class="form-control" required>
+                        <option value="">Виберіть турнір</option>
+                        <option value="5cool-april">5COOL APRIL (12.04.2025)</option>
+                        <option value="summer-championship">SUMMER CHAMPIONSHIP (20.05.2025)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tournament-url">Посилання на профіль команди</label>
+                    <input type="url" id="tournament-url" class="form-control" placeholder="https://faceit.com/teams/your-team">
+                </div>
+                
+                <div class="form-group">
+                    <label for="registration-date">Дата реєстрації</label>
+                    <input type="datetime-local" id="registration-date" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Додаткова інформація</label>
+                    <textarea id="comments" class="form-control" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="btn">Зареєструватися</button>
+                </div>
+            </form>
+
+            <aside class="contact-sidebar">
+                <h3>Наші контакти</h3>
+                <div class="contact-info">
+                    <p><b>Телефон:</b> +380 99 123 45 67</p>
+                    <p><b>Email:</b> info@5cool.com.ua</p>
+                    <p><b>Адреса:</b> м. Київ, вул. Кіберспортивна, 42</p>
+                </div>
+                <div class="social-contacts">
+                    <h4>Ми в соціальних мережах:</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="working-hours">
+                    <h4>Години роботи:</h4>
+                    <p>Пн-Пт: 9:00 - 18:00</p>
+                    <p>Сб-Нд: 10:00 - 16:00</p>
+                </div>
+            </aside>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="img/logo.png" alt="Logo" class="footer-logo">
+            <p>Круті хлопаки © 2025</p>
+        </div>
+        <div class="footer-center">
+            <h3>Контакти</h3>
+            <p>Email: info@tournament.ua</p>
+            <p>Телефон: +380 44 123 45 67</p>
+            <address>м. Київ, вул. Кіберспортивна, 42</address>
+        </div>
+        <div class="footer-right">
+            <h3>Соціальні мережі</h3>
+            <div class="social-links">
+                <a href="#">Discord</a>
+                <a href="#">Instagram</a>
+                <a href="#">Telegram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
